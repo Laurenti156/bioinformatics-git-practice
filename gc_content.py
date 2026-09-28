@@ -1,6 +1,8 @@
-def calculate_gc_content(dna_sequence)
-dna=dna_sequence.upper()
-    gc=dna.count('G')+dna.count
-    return round((gc/len(dna))*
-    dna="ATGCGCATTAGCGC"
-    print(f"GC%:{calculate_gc_content}
+
+def calculate_gc_content(dna):
+    dna = dna.upper()
+    gc = dna.count('G') + dna.count('C')
+    gc_content = (gc / len(dna)) * 100
+    return gc_content
+   dna = "ATGCGCTA"
+print(calculate_gc_content(dna)) 
